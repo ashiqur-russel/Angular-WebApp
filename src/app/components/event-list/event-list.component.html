@@ -6,7 +6,7 @@
         <div class="row mt-3">
             <div class="col-md-5" *ngFor="let eventList of events">
                 <div class="card shadow-lg">
-                    <app-event [event]="eventList"></app-event>
+                    <app-event (click)="handleEventClick(eventList.name)" [event]="eventList"></app-event>
                 </div>
             </div>
         </div>
