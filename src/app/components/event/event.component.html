@@ -5,6 +5,10 @@
     <p>Price : ${{event?.price}}</p>
     <p>ImageUrl : ${{event?.imageUrl}}</p>
     <p>Location : {{event?.price}} {{event?.location?.address}}</p>
-    <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Details</button>
-    <app-event-details></app-event-details>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
+        [routerLink]="['/event',event.id]">
+        Details
+    </button>
+    <app-event-details [event]="currentEvent"></app-event-details>
 </div>

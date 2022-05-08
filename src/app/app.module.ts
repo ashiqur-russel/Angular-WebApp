@@ -13,6 +13,7 @@ import { EventService } from './services/event.service';
 import { ToastMessageComponent } from './components/toast-message/toast-message.component';
 import { EventDetailsComponent } from './components/event-details/event-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateFormComponent } from './components/create-form/create-form.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent,
     ToastMessageComponent,
     EventDetailsComponent,
+    CreateFormComponent,
 
   ],
   imports: [
