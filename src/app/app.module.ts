@@ -14,6 +14,8 @@ import { ToastMessageComponent } from './components/toast-message/toast-message.
 import { EventDetailsComponent } from './components/event-details/event-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateFormComponent } from './components/create-form/create-form.component';
+import { ErrorComponent } from './components/error/error.component';
+import { EventRouteService } from './services/event-route.service';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { CreateFormComponent } from './components/create-form/create-form.compon
     ToastMessageComponent,
     EventDetailsComponent,
     CreateFormComponent,
+    ErrorComponent,
 
   ],
   imports: [
@@ -32,7 +35,7 @@ import { CreateFormComponent } from './components/create-form/create-form.compon
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [EventService, ToastrService],
+  providers: [EventService, ToastrService, EventRouteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

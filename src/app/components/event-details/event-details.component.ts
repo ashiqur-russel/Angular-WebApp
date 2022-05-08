@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { EventService } from 'src/app/services/event.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-event-details',
@@ -17,5 +18,6 @@ export class EventDetailsComponent implements OnInit {
     this.event = this.eventService.getEvent(+this.route.snapshot.params['id']); // give parameters of cuurent route
 
   }
+
 
 }
