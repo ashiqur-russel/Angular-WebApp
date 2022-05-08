@@ -13,6 +13,9 @@ import { EventService } from './services/event.service';
 import { ToastMessageComponent } from './components/toast-message/toast-message.component';
 import { EventDetailsComponent } from './components/event-details/event-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateFormComponent } from './components/create-form/create-form.component';
+import { ErrorComponent } from './components/error/error.component';
+import { EventRouteService } from './services/event-route.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent,
     ToastMessageComponent,
     EventDetailsComponent,
+    CreateFormComponent,
+    ErrorComponent,
 
   ],
   imports: [
@@ -30,7 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [EventService, ToastrService],
+  providers: [EventService, ToastrService, EventRouteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

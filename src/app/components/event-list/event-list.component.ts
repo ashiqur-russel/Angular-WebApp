@@ -20,13 +20,6 @@ export class EventListComponent implements OnInit {
     this.events = this.eventService.getEvents();
   }
 
-  handleEventClick(eventName: any) {
-    console.log("hey here  " + eventName);
-
-    this.toastr.success(eventName);
-
-  }
-
 
 
 }
