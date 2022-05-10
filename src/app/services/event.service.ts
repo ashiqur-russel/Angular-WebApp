@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { filter } from 'rxjs';
+import { IEvent } from 'src/app/user/event.model';
+
 
 @Injectable({
   providedIn: 'root'

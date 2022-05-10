@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from 'src/app/services/event.service';
 import { ToastService } from "../../common/toast.service"
+import { IEvent } from 'src/app/user/event.model';
 
 declare let toastr: any;
 

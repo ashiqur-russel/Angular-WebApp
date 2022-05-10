@@ -14,15 +14,9 @@ const routes: Routes = [
   { path: 'event/:id', component: EventDetailsComponent, canActivate: [EventRouteService] },
   { path: 'city', component: CardComponent },
   { path: 'create-form', component: CreateFormComponent },
+  { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
   //Wild Card Route for 404 request
-  {
-    path: '**', pathMatch: 'full',
-    component: ErrorComponent
-  },
-
-
-
-
+  { path: 'error', component: ErrorComponent },
 
 ];
 
